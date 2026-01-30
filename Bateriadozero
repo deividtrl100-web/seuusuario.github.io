@@ -1,0 +1,209 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Começando do zero na bateria</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }body {
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)),
+              url('https://images.unsplash.com/photo-1511379938547-c1f69419868d') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 2s ease;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* CARD */
+.card {
+  background: #111;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 0 25px rgba(255,255,255,0.05);
+}
+
+/* PLANOS / TÓPICOS */
+.planos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.plano {
+  background: #111;
+  border-radius: 20px;
+  padding: 35px;
+  text-align: center;
+  transition: transform .4s, box-shadow .4s;
+}
+
+.plano:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(255,255,255,0.15);
+}
+
+/* BOTÃO */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background: #25D366;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(37,211,102,0.6);
+}
+
+/* OBS */
+.obs {
+  background: #0b0b0b;
+  border-top: 1px solid #222;
+}
+
+.frase {
+  margin-top: 40px;
+  font-style: italic;
+  opacity: .85;
+  text-align: center;
+}
+
+/* ANIMAÇÕES */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* SCROLL */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.2rem; }
+  section { padding: 60px 8%; }
+}
+
+  </style>
+</head>
+<body>  <section class="hero">
+    <h1>Começando do zero na bateria</h1>
+  </section>  <section class="reveal">
+    <h2>Sobre mim</h2>
+    <div class="card">
+      <p>
+        Meu nome é <strong>Davi Tarlis de Lima</strong>, tenho 21 anos e sou músico há mais de 10 anos.
+        Atuo como baterista da Igreja Novo Reino e tenho como objetivo ajudar você a evoluir musicalmente
+        com técnica, sensibilidade e criatividade.
+        <br><br>
+        Quero te ajudar a entender, praticar e desenvolver as habilidades necessárias para se tornar
+        um ótimo artista, transmitindo presença, confiança e musicalidade no palco.
+      </p>
+    </div>
+  </section>  <section class="reveal">
+    <h2>O que você vai aprender?</h2>
+    <div class="planos">
+      <div class="plano"><h3>Teoria musical básica</h3><p>Fundamentos essenciais para entender música desde o início.</p></div>
+      <div class="plano"><h3>Leitura de partitura</h3><p>Aprenda a ler e interpretar partituras com segurança.</p></div>
+      <div class="plano"><h3>Rudimentos e ritmos</h3><p>Base técnica para tocar com precisão e controle.</p></div>
+      <div class="plano"><h3>Estudo de músicas</h3><p>Aplicação prática com músicas reais.</p></div>
+      <div class="plano"><h3>Criatividade</h3><p>Crie suas próprias viradas e grooves.</p></div>
+    </div>
+  </section>  <section class="reveal">
+    <h2>Horários disponíveis</h2>
+    <div class="card">
+      <p>Segunda a sábado: <strong>20h00 às 21h00</strong></p>
+      <p>Domingo: <strong>09h00 às 10h30</strong></p>
+      <p><em>(Sujeito a alterações)</em></p>
+    </div>
+  </section>  <section class="reveal">
+    <h2>Planos de aula</h2>
+    <div class="planos">
+      <div class="plano">
+        <h3>Pacote mensal</h3>
+        <p>Ideal para quem quer evolução contínua e acompanhamento.</p>
+        <a class="btn" href="https://wa.me/5511974542648?text=Olá!%20Tenho%20interesse%20no%20PACOTE%20MENSAL%20de%20bateria." target="_blank">Escolher este pacote</a>
+      </div>
+      <div class="plano">
+        <h3>Pacote semanal</h3>
+        <p>Perfeito para quem prefere aulas pontuais e flexíveis.</p>
+        <a class="btn" href="https://wa.me/5511974542648?text=Olá!%20Tenho%20interesse%20no%20PACOTE%20SEMANAL%20de%20bateria." target="_blank">Escolher este pacote</a>
+      </div>
+    </div>
+  </section>  <section class="obs reveal">
+    <h2>Observações</h2>
+    <p>
+      Qualquer dúvida a respeito de disponibilidade ou qualquer outra informação,
+      entre em contato comigo pelo WhatsApp.
+    </p>
+    <br>
+    <a class="btn" href="https://wa.me/5511974542648?text=Olá!%20Tenho%20interesse%20nas%20aulas%20de%20bateria." target="_blank">
+      📱 WhatsApp: 11 9.7454-2648
+    </a><p class="frase">
+  “Se você não tentar, nunca vai alcançar. Todo grande músico começou do zero.”
+</p>
+
+  </section>  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    window.addEventListener('scroll', () => {
+      reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        const visible = window.innerHeight - 100;
+        if (top < visible) el.classList.add('active');
+      });
+    });
+  </script></body>
+</html>
